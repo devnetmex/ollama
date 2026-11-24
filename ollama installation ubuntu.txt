@@ -1,0 +1,58 @@
+
+Install Ollama
+
+curl -fsSL https://ollama.com/install.sh | sh
+
+
+Download a local model
+ollama run qwen2.5-coder:14b
+
+
+
+Open web UI installation
+
+
+open-webui runs on python3.12
+
+sudo apt update
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt update
+sudo apt install python3.12 
+sudo apt install python3.12-venv
+
+instalar uv
+
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+reload terminal
+
+uv --version
+
+uv python list
+
+uv venv open-webui-venv --python 3.12
+
+
+source open-webui-venv/bin/activate
+
+
+uv pip install open-webuipip 
+
+open-webui serve
+
+localhost:8080
+
+
+integrations / external tools server +
+
+under the virtual env
+
+export NODE_TLS_REJECT_UNAUTHORIZED=0
+export REQUESTS_VERIFY=false
+export AIOHTTP_CLIENT_SESSION_TOOL_SERVER_SSL=false
+export AIOHTTP_CLIENT_SESSION_SSL=false
+export REQUESTS_VERIFY=false
+export PYTHONHTTPSVERIFY=0
+
+
